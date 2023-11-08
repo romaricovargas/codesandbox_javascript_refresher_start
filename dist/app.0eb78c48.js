@@ -123,13 +123,17 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.apiKey = void 0;
-var apiKey = exports.apiKey = "thequickbrownfox";
+exports.default = void 0;
+//export let apiKey = "thequickbrownfox";
+var _default = exports.default = "jumpedoverthelazydog";
 },{}],"assets/scripts/app.js":[function(require,module,exports) {
 "use strict";
 
-var _util = require("./util.js");
-console.log(_util.apiKey);
+var _util = _interopRequireDefault(require("./util.js"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+//import { apiKey } from "./util.js";
+
+console.log(_util.default);
 },{"./util.js":"assets/scripts/util.js"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
